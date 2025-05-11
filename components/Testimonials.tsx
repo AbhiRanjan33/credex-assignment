@@ -58,7 +58,7 @@ export default function Testimonials() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.3 }}
             >
-              <p className={`${quoteText} mb-4 italic`}>"{testimonial.quote}"</p>
+              <p className={`${quoteText} mb-4 italic`}>&quot;{testimonial.quote}&quot;</p>
               <p className={`font-semibold ${nameText}`}>{testimonial.name}</p>
               <p className={`text-sm ${roleText}`}>{testimonial.role}, {testimonial.company}</p>
             </motion.div>
