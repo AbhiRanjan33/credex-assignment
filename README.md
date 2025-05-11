@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+SoftSell Marketing Website
+A modern, responsive one-page marketing website for SoftSell, a fictional software resale startup. Built with Next.js (App Router), Tailwind CSS, and deployed on Vercel.
+Features
 
-## Getting Started
+Hero Section: Engaging headline, subheading, and two CTA buttons ("Get a Quote" links to Contact Form, "Sell Licenses" links to How It Works).
+How It Works: Three-step process with Lucide icons.
+Why Choose Us: Four feature tiles with icons highlighting benefits.
+Testimonials: Two dummy customer reviews.
+Contact Form: Form with frontend validation (Name, Email, Company, License Type, Message).
+Responsive Design: Mobile-first layout with Tailwind CSS.
+SEO: Metadata for title, description, and favicon.
+Light/Dark Mode: Toggleable theme using next-themes.
+Animations: Subtle transitions using Framer Motion.
+Chat Widget: Mock AI-powered FAQ widget with hardcoded Q&A.
+Deployment: Hosted on Vercel with a live link.
 
-First, run the development server:
+Design Choices
 
-```bash
+Tech Stack: Next.js (App Router) for modern React framework, Tailwind CSS for rapid styling, and Vercel for seamless deployment.
+Color Palette: Blue (#2563eb, #1e3a8a) for trust, yellow (#facc15) for primary CTA, neutral grays for contrast.
+Typography: Inter for body text (clean, readable), Poppins for headings (bold, modern).
+Icons: Lucide React for lightweight, customizable icons.
+Animations: Framer Motion for smooth section transitions and hover effects.
+CTA Buttons: "Get a Quote" (yellow) links to Contact Form (#contact), "Sell Licenses" (blue) links to How It Works (#how-it-works) to guide users through the process.
+Chat Widget: Mock implementation with static FAQs to simulate AI interaction.
+Dark Mode: Implemented with next-themes for accessibility and user preference.
+
+Setup Instructions
+
+Clone the Repository
+git clone https://github.com/your-username/softsell-website.git
+cd softsell-website
+
+
+Install Dependencies
+npm install
+
+
+Run Development Server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Build for Production
+npm run build
+npm run start
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+Deployment Instructions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Push to GitHub
+git add .
+git commit -m "Update Sell Licenses to link to How It Works"
+git push origin main
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+Deploy to Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Install Vercel CLI: npm i -g vercel
+Run: vercel --prod
+Follow prompts to link the project to your Vercel account.
+Vercel will provide a live URL (e.g., https://softsell-website.vercel.app).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+Time Estimate
+
+Initial Setup and Planning: 1 hour
+Component Development: 4 hours
+Styling and Responsiveness: 2 hours
+Bonus Features (Dark Mode, Chat Widget, Animations): 2 hours
+Adding Sell Licenses CTA and Fixing Navigation: 1 hour
+Deployment and Documentation: 1 hour
+Total: ~11 hours
+
+Live Demo
+SoftSell Website (Replace with your Vercel URL after deployment)
+Future Improvements
+
+Integrate a real AI chatbot using OpenAI API or LangChain.
+Add form submission to a backend (e.g., Node.js, Supabase).
+Enhance animations with more interactive elements.
+Implement analytics tracking (e.g., Google Analytics).
+
